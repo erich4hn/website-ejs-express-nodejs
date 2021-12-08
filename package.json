@@ -1,0 +1,15 @@
+{
+  "name": "website-with-ejs",
+  "version": "1.0.0",
+  "description": "Primeiro website usando ejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Eric Hahn",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

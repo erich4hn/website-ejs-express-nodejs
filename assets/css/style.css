@@ -1,0 +1,225 @@
+.banner-main {
+  position: relative;
+}
+
+.banner-main > .image-of-banner {
+  width: 260px;
+  height: 450px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-main > .image-of-banner > img {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner-main > .image-of-banner > .legend-of-image {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.banner-main > .image-of-banner > .legend-of-image > p {
+  width: calc(100% - 20px);
+  opacity: 0
+}
+
+.banner-main > .image-of-banner > .legend-of-image > a {
+  opacity: 0;
+}
+
+.banner-main > .image-of-banner > .legend-of-image > a > svg {
+  color: #FFF;
+  margin-right: 10px;
+}
+
+.banner-main > .image-of-banner:hover {
+  cursor: pointer;
+}
+
+.banner-main > .click-here {
+  position: absolute;
+  width: 150px;
+  height: 60px;
+  top: 0;
+  right: 100%;
+  background-color: #00b968;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.animate-role-in {
+  -webkit-animation-name: role-in;
+          animation-name: role-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+.animate-role-out {
+  -webkit-animation-name: role-out;
+          animation-name: role-out;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+.animate-text-in {
+  -webkit-animation-name: role-text-in;
+          animation-name: role-text-in;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+.animate-text-out {
+  -webkit-animation-name: role-text-out;
+          animation-name: role-text-out;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes role-in {
+  from {
+    height: 0%;
+  }
+
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes role-in {
+  from {
+    height: 0%;
+  }
+
+  to {
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes role-out {
+  from {
+    height: 100%;
+  }
+
+  to {
+    height: 0%;
+  }
+}
+
+@keyframes role-out {
+  from {
+    height: 100%;
+  }
+
+  to {
+    height: 0%;
+  }
+}
+
+@-webkit-keyframes role-text-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes role-text-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes role-text-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes role-text-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.author {
+  width: 165px;
+  height: 165px;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.author > .border-author {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.author > .border-author > img {
+  margin-top: 40px;
+  width: 150px;
+  height: 240px;
+}
+
+.biography > .biography-panel {
+  width: 500px;
+  text-align: justify;
+}
+
+.contact-area > .icons-for-contact > a > img {
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+  fill: #FFFF;
+}
+
+.contact-area > .icons-for-contact > a > img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.contact-area > .icons-for-contact > a:last-child > img {
+  margin-right: 0px;
+}

@@ -1,0 +1,27 @@
+<%- include('../partials/head', { titleOfPage: 'Sobre' }); %>
+
+<body class="container bg-dark">
+
+<%- include('../partials/header', { page: 'Sobre' }); %>
+
+<main class="d-flex justify-content-center align-items-center flex-column mt-5">
+  <section class="author d-flex justify-content-center align-items-center animate__animated animate__lightSpeedInLeft animate__fast">
+    <article class="border-author d-flex justify-content-center align-items-center">
+      <img src="/img/people.jpg" alt="Eric Hahn" loading="lazy"/>
+    </article>
+  </section>
+  <section class="biography mt-4">
+    <article class="biography-panel">
+      <p class="fs-1 text-white">Eric Hahn</p>
+      <p class="text-white text-left justify-text lh-base">Oi! Meu nome é Eric Hahn, tenho <%- year - 2000 %>
+        anos. Sou apaixonado por tecnologia e estou constantemente buscando conhecimento. Peguei interesse
+        por programação desde novinho aos meus 12 anos de idade, queria muito saber como funcionavam os 
+        jogos de video-game por baixo dos panos. Era tudo muito curioso e assim como toda criança é, fiz
+        de tudo para entender, até entrei para um cursinho de Unreal Development Kit, só que no final das 
+        contas não era aquilo que eu queria. Nisso tive uma transição de interesse em jogos online, onde
+        as páginas dos jogos tinham sistema de login e registro, fiquei fascinado em programação web dessa forma.</p>
+    </article>
+  </section>
+</main>
+
+<%- include('../partials/footer', { fullYear: year, pageName: 'Sobre' }); %>

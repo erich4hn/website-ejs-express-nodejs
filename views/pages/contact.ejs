@@ -1,0 +1,18 @@
+<%- include('../partials/head', { titleOfPage: 'Contato' }); %>
+
+<body class="container bg-dark">
+
+<%- include('../partials/header', { page: 'Contato' }); %>
+
+<main class="mt-5">
+  <section class="contact-area">
+    <p class="fs-1 text-white text-center">Entre em contato comigo</p>
+    <article class="mt-4 icons-for-contact d-flex justify-content-center align-items-center">
+      <a href="https://github.com/erich4hn" target="_blank"><img src="/img/github.svg" loading="lazy" /></a>
+      <a href="https://www.linkedin.com/in/erich4hn" target="_blank"><img src="/img/linkedin.svg" loading="lazy" /></a>
+      <a href="mailto:ericdchahn@gmail.com" target="_blank"><img src="/img/gmail.svg" loading="lazy" /></a>
+    </article>
+  </section>
+</main>
+
+<%- include('../partials/footer', { fullYear: year, pageName: 'Contato' }); %>

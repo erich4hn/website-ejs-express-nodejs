@@ -1,0 +1,16 @@
+<footer class="text-center text-white mt-5">
+  © <%= fullYear %> ~ Feito com ❤️ por Eric Hahn.
+</footer>
+
+<script src="/js/gsap.min.js"></script>
+<% if (pageName === 'Principal') { %>
+  <script src="/js/home.js"></script>
+<% } else if (pageName === 'Sobre') { %>
+  <script src="/js/home.js"></script>
+<% } else if (pageName === 'Contato') { %>
+  <script src="/js/contact.js"></script>
+<% } else { %>
+  <script src="/js/home.js"></script>
+<% } %>
+</body>
+</html>
